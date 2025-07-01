@@ -1,0 +1,59 @@
+{
+  "name": "dafi-telegram-bot",
+  "version": "1.0.0",
+  "description": "DAFI - Instant Payment Platform for Saudi SME | NumAris Ltd.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "deploy": "pm2 start index.js --name dafi-bot",
+    "heroku-postbuild": "echo 'Build completed'"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "payments",
+    "saudi",
+    "sme",
+    "fintech",
+    "paytabs",
+    "dafi",
+    "numaris",
+    "mada",
+    "qr-code"
+  ],
+  "author": "NumAris Ltd. <altyn13@icloud.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/numaris/dafi-telegram-bot"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "axios": "^1.6.2",
+    "qrcode": "^1.5.3",
+    "dotenv": "^16.3.1",
+    "moment": "^2.29.4",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "homepage": "https://dafi-payment-bot.herokuapp.com",
+  "bugs": {
+    "url": "https://github.com/numaris/dafi-telegram-bot/issues",
+    "email": "altyn13@icloud.com"
+  }
+}
+
