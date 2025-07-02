@@ -261,9 +261,9 @@ bot.onText(/\/start/, async (msg) => {
   const chatId = msg.chat.id;
   try {
     const user = getUser(chatId);
-    await bot.sendMessage(chatId, "Hello! Please choose your language"); 
+     await bot.sendMessage(chatId, "Hello! Please choose your language", {
       reply_markup: getLanguageKeyboard()
-    });
+        });
   } catch (error) {
     console.error('Start command error:', error);
   }
