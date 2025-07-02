@@ -276,7 +276,7 @@ bot.on('message', async (msg) => {
   
   if (!text || text.startsWith('/')) return;
   
-  try {
+  try { 
     const user = getUser(chatId);
     const l = getUserLang(chatId);
 
